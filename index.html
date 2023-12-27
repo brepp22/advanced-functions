@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Advanced Functions</title>
+</head>
+
+<body>
+  <h1>Advanced Functions</h1>
+  <p>Please load this file in VSCode and Chrome, and open the Console in Chrome Dev Tools.</p>
+  <p>Work through the challenges found inside the script tag in this document,
+    until the Console reports all tests passing.</p>
+
+  <script>
+    // In CHALLENGES 1-8 you will flesh out some functions.
+
+    // To do this, translate each 🧠 set of instructions into a working function.
+    // ❗ Functions are already scaffolded as arrow functions.
+    // ❗ Watch the Guided Project to learn proper debugging technique.
+
+    // 👉 CHALLENGE 1
+    // 🧠 The function processSingleLearner takes a learner object as its argument, and returns it after some modifications.
+    // 🧠 If the learner has a "lovesJS" property set to 0, we need to set it to false.
+    // 🧠 If the learner has a "lovesJS" property set to 1, we need to set it to true.
+    // 🤔 The reason is that in some databases, Booleans true and false are actually stored as 1 and 0 respectively.
+    // 🤔 But real Booleans are easier to work with, and that is why we might need a function like this!
+    // 🧠 Examples of usage:
+    // processSingleLearner({ name: "Elisabeth", lovesJS: 1 }) // should return { name: "Elisabeth", lovesJS: true }
+    // processSingleLearner({ name: "Pete", age: 23, lovesJS: 0 }) // should return { name: "Pete", age: 23, lovesJS: false }
+    const processSingleLearner = () => {
+
+    }
+
+    // 👉 CHALLENGE 2
+    // 🧠 The function processLearnerLoop takes an array of learner objects as its argument, and returns it after some modifications.
+    // 🧠 For each learner, if the learner has a "lovesJS" property set to 0, we need to set it to false.
+    // 🧠 For each learner, if the learner has a "lovesJS" property set to 1, we need to set it to true.
+    // 🧠 Examples of usage:
+    // processSingleLearner([{ name: "Elisabeth", lovesJS: 1 },{ name: "Pete", age: 23, lovesJS: 0 }])
+    //   should return [{ name: "Elisabeth", lovesJS: true },{ name: "Pete", age: 23, lovesJS: false }]
+    // ❗ Notes:
+    // 🧠 There are many approaches to this problem: using a loop, using forEach, using map...
+    // 🧠 Solve this challenge using a for/in loop or a for loop.
+    const processLearnersLoop = () => {
+
+    }
+
+    // 👉 CHALLENGE 3
+    // 🧠 The function processLearnerForEach takes an array of learner objects as its argument, and returns it after some modifications.
+    // 🧠 It is an alternate implementation of the function processLearnersLoop above.
+    // ❗ Notes:
+    // 🧠 Solve this challenge using the forEach method of the learners array.
+    // 🧠 Use arrow functions whenever possible.
+    const processLearnerForEach = () => {
+
+    }
+
+    // 👉 CHALLENGE 4
+    // 🧠 The function processLearnerMap takes an array of learner objects as its argument, and returns a new array.
+    // 🧠 It is an alternate implementation of the function processLearnersLoop above.
+    // ❗ Notes:
+    // 🧠 Solve this challenge using the map method of the learners array.
+    // 🧠 Use arrow functions.
+    const processLearnerMap = () => {
+
+    }
+
+    // 👉 CHALLENGE 5
+    // 🧠 The function getJavaScriptLoversForEach takes an array of learner objects and returns an array or a string.
+    // 🧠 The returned array must contain only the learners who love JavaScript.
+    // 🧠 However, if nobody loves JavaScript the function returns the string "no JS lovers here!".
+    // 🧠 Another complication is that the lovesJS prop on the learner could be a Boolean (false/true) or a number (0/1).
+    // ❗ Notes:
+    // 🧠 Solve this challenge using the forEach method of the learners array.
+    // 🧠 You will need to declare a result array into which you push learners from inside your forEach loop.
+    const getJavaScriptLoversForEach = () => {
+
+    }
+
+    // 👉 CHALLENGE 6
+    // 🧠 The function getJavaScriptLoversFilter takes an array of learner objects and returns an array or a string.
+    // 🧠 It should work exactly the same as the getJavaScriptLoversForEach function above.
+    // ❗ Notes:
+    // 🧠 Solve this challenge using the filter method of the learners array.
+    const getJavaScriptLoversFilter = () => {
+
+    }
+
+    // 👉 CHALLENGE 7
+    // 🧠 The function sumOddInts takes an array of integers as its argument and returns an array with two elements.
+    // 🧠 The first element is a number which is the sum of the odd integers in the original array.
+    // 🧠 The second element is an array containing only the odd numbers from the original array, in the same order.
+    // 🧠 Examples of usage:
+    // sumOddInts([0, 1, 2, 3, 4, 5]) // should return [9, [1, 3, 5]]
+    // sumOddInts([2, 5, 1, 4, 0]) // should return [6, [5, 1]]
+    // sumOddInts([2, 6]) // should return [0, []]
+    // sumOddInts([]) // should return [0, []]
+    // ❗ Notes:
+    // 🧠 This could be solved by using filter to make an array of odd integers, and then using forEach to add them up.
+    // 🧠 Or you could opt for solving everything with a single forEach which is the recommended approach (saves a loop).
+    const sumOddInts = () => {
+
+    }
+
+    // 👉 CHALLENGE 8
+    // 🧠 The function checkInts takes any number of arguments, but each argument is an integer.
+    // 🧠 The return value is a new array of strings, its length equal to the number of arguments passed.
+    // 🧠 Each string is "even" if the integer was even, or "odd" if it was odd.
+    // 🧠 If no arguments are passed however, return the string "pass some arguments, yo!".
+    // 🧠 Examples of usage:
+    // checkInts(0, 1, 2, 3, 4, 5) // should return ["even", "odd","even", "odd","even", "odd"]
+    // checkInts(2, 5, 1, 4, 0) // should return ["even", "odd", "odd", "even", "even"]
+    // checkInts(2, 6) // should return ["even", "even"]
+    // ❗ Notes:
+    // 🧠 Solve this problem using rest parameters and map.
+    const checkInts = () => {
+
+    }
+
+    // 🧪 TESTS, do not work below this line
+    // 🧪 TESTS, do not work below this line
+    // 🧪 TESTS, do not work below this line
+    runTests('CHALLENGE 1 - processSingleLearner', processSingleLearner, [
+      [[{ lovesJS: 1 }], { lovesJS: true }],
+      [[{ lovesJS: 0 }], { lovesJS: false }],
+      [[{ name: "Elisabeth", lovesJS: 1 }], { name: "Elisabeth", lovesJS: true }],
+      [[{ name: "Pete", age: 23, lovesJS: 0 }], { name: "Pete", age: 23, lovesJS: false }],
+    ])
+    const processLearnersTest = [
+      [[[{ name: "Elisabeth", lovesJS: 1 }, { name: "Pete", age: 23, lovesJS: 0 }]], [{ name: "Elisabeth", lovesJS: true }, { name: "Pete", age: 23, lovesJS: false }]],
+      [[[{ lovesJS: 1 }, { lovesJS: 0 }, { lovesJS: 1 }, { lovesJS: 0 }]], [{ lovesJS: true }, { lovesJS: false }, { lovesJS: true }, { lovesJS: false }]],
+    ]
+    runTests('CHALLENGE 2 - processLearnersLoop', processLearnersLoop, processLearnersTest)
+    runTests('CHALLENGE 3 - processLearnerForEach', processLearnerForEach, processLearnersTest)
+    runTests('CHALLENGE 4 - processLearnerMap', processLearnerMap, processLearnersTest)
+    const getJavaScriptLoversTest = [
+      [[[{ name: "Elisabeth", lovesJS: 1 }, { name: "Pete", age: 23, lovesJS: 0 }]], [{ name: "Elisabeth", lovesJS: 1 }]],
+      [[[{ name: "Elisabeth", lovesJS: false }, { name: "Pete", age: 23, lovesJS: true }]], [{ name: "Pete", age: 23, lovesJS: true }]],
+      [[[{ lovesJS: 1 }, { lovesJS: 0 }, { lovesJS: true }, { lovesJS: false }]], [{ lovesJS: 1 }, { lovesJS: true }]],
+      [[[{ lovesJS: false }, { lovesJS: 0 }, { lovesJS: false }]], "no JS lovers here!"],
+    ]
+    runTests('CHALLENGE 5 - getJavaScriptLoversForEach', getJavaScriptLoversForEach, getJavaScriptLoversTest)
+    runTests('CHALLENGE 6 - getJavaScriptLoversFilter', getJavaScriptLoversFilter, getJavaScriptLoversTest)
+    runTests('CHALLENGE 7 - sumOddInts', sumOddInts, [
+      [[[0, 1, 2, 3, 4, 5]], [9, [1, 3, 5]]],
+      [[[2, 5, 1, 4, 0]], [6, [5, 1]]],
+      [[[2, 6]], [0, []]],
+      [[[]], [0, []]],
+    ])
+    runTests('CHALLENGE 8 - checkInts', checkInts, [
+      [[0, 1, 2, 3, 4, 5], ["even", "odd", "even", "odd", "even", "odd"]],
+      [[2, 5, 1, 4, 0], ["even", "odd", "odd", "even", "even"]],
+      [[2, 6], ["even", "even"]],
+      [[3, 5], ["odd", "odd"]],
+      [[], "pass some arguments, yo!"],
+    ])
+    function runTests(testName, func, tests) {
+      let results = []
+      tests.forEach(test => {
+        const argsList = test[0]
+        const expected = JSON.stringify(test[1])
+        const actual = JSON.stringify(func.apply(null, JSON.parse(JSON.stringify(argsList))))
+        results.push([argsList, expected, actual])
+      })
+      console.log('\n' + testName)
+      if (results.every(result => result[1] === result[2])) console.log('\t✅ All tests pass')
+      else results.forEach((result, idx) => {
+        if (result[1] === result[2]) console.log(`\t✅ Test ${idx + 1} passes`)
+        else console.log(`\t❌ Test ${idx + 1} fails: ${func.name}(${result[0]
+          .map(JSON.stringify)}) should return ${result[1]} but returns ${result[2]}`)
+      })
+    }
+  </script>
+</body>
+
+</html>
